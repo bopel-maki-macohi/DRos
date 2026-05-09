@@ -1,8 +1,19 @@
 {
-    "version": 0,
+    "version": 1,
     "events": [
         {
-            "urdad": null
+            "id": "dummy",
+            "data": 0
+        },
+        {
+            "id": "dummy",
+            "data": 1
+        },
+        {
+            "id": "what",
+            "data": {
+                "v": 3.14159
+            }
         }
     ]
 }

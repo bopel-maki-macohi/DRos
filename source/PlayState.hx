@@ -1,6 +1,6 @@
 package;
 
-import data.AnimationData;
+import data.animation.AnimationData;
 import flixel.FlxState;
 
 class PlayState extends FlxState
@@ -10,7 +10,11 @@ class PlayState extends FlxState
 		super.create();
 
 		var test = new AnimationData().loadFromFile('assets/data/test.json');
-		trace(test);
+
+		for (event in test.events)
+		{
+			trace(event);
+		}
 	}
 
 	override public function update(elapsed:Float)
