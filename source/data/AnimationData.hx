@@ -10,7 +10,7 @@ class AnimationData
 	public var version:Null<Int>;
 
 	@:default([])
-	public var events:Array<{urdad:String}>;
+	public var events:Array<Dynamic>;
 
 	public function new() {}
 

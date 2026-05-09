@@ -10,6 +10,7 @@ class PlayState extends FlxState
 		super.create();
 
 		var test = new AnimationData().loadFromFile('assets/data/test.json');
+		trace(test);
 	}
 
 	override public function update(elapsed:Float)
