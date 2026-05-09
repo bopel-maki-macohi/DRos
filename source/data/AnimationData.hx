@@ -1,6 +1,7 @@
 package data;
 
 import json2object.JsonParser;
+import json2object.JsonWriter;
 import lime.utils.Assets;
 
 class AnimationData
@@ -30,5 +31,10 @@ class AnimationData
 		this.version = CURRENT_VERSION;
 
 		return this;
+	}
+
+	public function toString()
+	{
+		return new JsonWriter<AnimationData>().write(this, '');
 	}
 }
