@@ -7,11 +7,10 @@ class AnimationData
 {
 	public static final CURRENT_VERSION:Int = 0;
 
-	@:default(CURRENT_VERSION)
-	public var version:Int;
+	public var version:Null<Int>;
 
 	@:default([])
-	public var events:Array<Dynamic>;
+	public var events:Array<{urdad:String}>;
 
 	public function new() {}
 
@@ -26,7 +25,7 @@ class AnimationData
 
 		this.events = data.events;
 
-		switch (data.version) {}
+		switch (data?.version ?? 0) {}
 
 		this.version = CURRENT_VERSION;
 
